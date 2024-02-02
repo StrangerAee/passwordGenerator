@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: steelblue;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    padding: 50px 0 50px 0;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.displayPassword{
+    width: 100%;
+    padding: 20px 0 20px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid chocolate;
+}
+
+.generateButton{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid transparent;
+    background-color: rgb(223, 94, 47);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s linear;
+}
+.generateButton:hover{
+    border: 1px dashed green;
+    background-color: coral;
+    color: #555;
+}
+
+.password-length{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.password-length p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#passwordLengthSelect{
+    text-align: center;
+    appearance: none;
+    padding: 20px; /* добавляем внутренний отступ */
+    font-size: 14px; /* размер шрифта */
+    border: 1px solid #ccc; /* цвет границы */
+    border-radius: 4px; /* скругление углов */
+}
+
+#passwordLengthSelect:hover{
+    border-color: #666;
+}
+
+
+#passwordLengthSelect option{
+        background-color: chocolate;
+        padding: 10px 0;
+        text-align: center;
+}
+
+#passwordLengthSelect:focus{
+    outline: none;
+    box-shadow: 0 0 5px #66afe9;
+}
